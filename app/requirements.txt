@@ -1,0 +1,35 @@
+# Core ML (installed separately in Dockerfile)
+# torch
+# torchvision
+# torchaudio
+
+# Vision Model Stack
+transformers
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+peft
+
+# Image Processing
+Pillow
+opencv-python
+numpy
+
+# Training (required for LoRA loading)
+trl
+accelerate
+safetensors
+
+# Inference & API (vllm installed separately in Dockerfile)
+# vllm
+fastapi
+uvicorn[standard]
+python-multipart
+openai
+
+# HTTP & Networking
+requests
+aiohttp
+
+# Utilities
+pyyaml
+tqdm
+scipy
